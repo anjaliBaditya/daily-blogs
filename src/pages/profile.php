@@ -38,7 +38,18 @@
             <nav>
                 <ul>
                     <div class="icons top-icons">
-                        
+                        <li class="nav-buttons">
+                            <a href="home.php">
+                                <i class="fa-solid fa-house fa-xl"></i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-buttons">
+                            <a href="search.php">
+                                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                                <p>Search</p>
+                            </a>
+                        </li>
                         <li class="nav-buttons">
                             <a href="trending.php">
                                 <i class="fa-solid fa-arrow-trend-up fa-xl"></i>
@@ -54,7 +65,16 @@
                             </a>
                         </li>
                     </div>
-                    
+                    <div class="icons">
+                        <li class="nav-buttons">
+                            <?php
+                            echo '<a href="./profile.php?userid=' . $user_id . '" class="selected">
+                                <i class="fa-solid fa-user fa-xl"></i>
+                                <p>Profile</p>
+                            </a>';
+                            ?>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </div>
