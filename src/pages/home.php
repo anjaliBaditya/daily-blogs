@@ -66,25 +66,12 @@ if (isset($_SESSION['user_id'])) {
                         </li>
                     </div>
                     <div class="icons">
-                        <li class="nav-buttons">
-                            <?php
-                            echo '<a href="./profile.php?userid=' . $user_id . '">
-                                <i class="fa-solid fa-user fa-xl"></i>
-                                <p>Profile</p>
-                            </a>';
-                            ?>
-                        </li>
+                        
                     </div>
                 </ul>
             </nav>
         </div>
-        <div class="main">
-            <div class="page-title">
-                <div class="line"></div>
-                <div class="header">
-                    <h1>Latest</h1>
-                </div>
-            </div>
+       
             <?php
             foreach ($blogs as $blog) {
                 $date = date('d', strtotime($blog['date_of_upload']));
