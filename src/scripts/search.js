@@ -1,4 +1,4 @@
-$('input[name="text"]').on('input', function() {
++$('input[name="text"]').on('input', function() {
     var search_term = $(this).val().toLowerCase();
     var $blog_container = $('.blog-container');
     var $blogs = $blog_container.find('.blog');
