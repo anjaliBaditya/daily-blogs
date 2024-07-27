@@ -111,3 +111,149 @@ body {
     flex-direction: row;
 }
 
+.blog .content {
+    order: 1;
+}
+
+.blog .image {
+    order: 2;
+}
+
+.description {
+    height: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 1.1rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.blog .readmore {
+    color: var(--accent);
+    padding: 0px;
+}
+
+.username-tag{
+    color : white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.username-tag:hover{
+    color : var(--accent);
+}
+
+.tags a {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.tags {
+    margin: 1rem auto;
+    width: auto;
+}
+
+.blog img {
+    padding: 10px;
+    padding-top: 0px;
+    height: 10rem;
+    border-radius: 0 20px 20px 0px;
+}
+
+@media only screen and (max-width : 720px) {
+
+    .parent {
+        flex-direction: column;
+    }
+
+    .main {
+        order: 1;
+        height: 100vh;
+        padding: 0;
+        padding-bottom: 15rem;
+    }
+
+    /* Home */
+
+    .page-title {
+        flex-direction: column;
+        align-items: center;
+        top: 3vh;
+        left: 0vw;
+    }
+
+    .page-title .line {
+        left: 0;
+        width: 50px;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .blog-wrapper {
+        flex-direction: column;
+        top: 10vh;
+    }
+
+    .blog-wrapper:hover {
+        background-color: transparent;
+    }
+
+
+    .left-div {
+        flex-direction: row;
+        order: 2;
+    }
+
+    .date {
+        text-align: left;
+        width: 50vw;
+        font-size: 18px;
+        padding: 5px;
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+
+    .username-div {
+        width: 50vw;
+        padding-top: 0px;
+        justify-content: right;
+        padding-right: 10px;
+    }
+
+    .username {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .right-div {
+        order: 1;
+    }
+
+    .blog .content {
+        order: 2;
+    }
+
+    .blog .image {
+        order: 1;
+    }
+
+    .blog img {
+        width: 100%;
+        object-fit: cover;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        border-radius: 1rem;
+    }
+
+    .blog .tags {
+        padding-top: 5px;
+        padding-bottom: 2px;
+    }
+
+}
